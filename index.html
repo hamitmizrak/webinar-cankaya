@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Webinar</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta  name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="author" content="Hamit Mızrak" />
 
     <link rel="stylesheet" href="style.css">
-    <script src="js/template.js"></script>
+    
 
     <!-- Bootstrap CSS -->
     <link
@@ -16,7 +16,134 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
   </head>
-  <body>
+  <body >
+
+
+
+
+       <!-- menu  start -->
+       <div class="container-fluid" style="position: fixed!important; top:0; z-index: 4;">
+        <nav id="back-top" class="navbar   navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">LOGO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aside-image">Hakkımızda</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#urunler" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ürünler
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Laptop</a>
+                                <a class="dropdown-item" href="#">PC</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Tablet</a>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Genel
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#vki" href="#">VKİ</a>
+
+                                <a class="dropdown-item" data-toggle="modal" data-target="#registerId"
+                                    href="#">Register</a>
+
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#to_do_list" href="#">ToDo
+                                    List</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- VKİ start -->
+    <div class="modal fade" id="vki" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <br>
+
+                </div>
+                <div class="modal-body">
+                    <h4 class="text-center ">Vucut Kitle indeksi</h4>
+                    <form action="#" method="get">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2">Kilo:</div>
+                                <div class="col-md-10">
+
+                                    <div class="form-group">
+                                        <input id="kilo" type="text" class="form-control"
+                                            placeholder="kilonunuzu giriniz" autofocus autocomplete="true">
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-2">Boy:</div>
+                                <div class="col-md-10">
+                                    <div class="form-group">
+                                        <input id="boy" type="text" class="form-control" placeholder="boyunuzu giriniz"
+                                            autofocus autocomplete="true">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2"></div>
+                                <div class="col-md-10">
+                                    <div class="form-group">
+                                        <button id="vki_hesapla" class="btn btn-primary">Hesapla</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-2">Sonuc:</div>
+                                <div class="col-md-10">
+                                    <p id="sonuc"></p>
+                                    <p id="sonuc2"></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- vki end -->
+
       <!-- <h1 style="font-size: 15px;" class="text-center text-primary">Webinar</h1>
     <img src="img/night-sky-g3bb1dfa7e_1920.jpg" alt="gökyüzü" />
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore maiores eligendi, nostrum totam sequi, debitis quod inventore molestias, eum repellat. Aliquam, repudiandae molestias nemo consectetur doloremque exercitationem hic quis odio libero quasi repellendus porro cum ab perferendis mollitia neque eligendi voluptate asperiores architecto.</p> -->
@@ -25,5 +152,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="js/template.js"></script>
   </body>
 </html>
